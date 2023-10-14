@@ -1,0 +1,686 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: KGPRISC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "KGPRISC.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "KGPRISC"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : KGPRISC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\lookahead_carry_unit.v" into library work
+Parsing module <lookahead_carry_unit>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\cla_4_bit.v" into library work
+Parsing module <cla_4_bit>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\cla_16_bit.v" into library work
+Parsing module <cla_16_bit>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\Decoder.v" into library work
+Parsing module <Decoder>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\adder_32_bit.v" into library work
+Parsing module <adder_32_bit>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\shifter.v" into library work
+Parsing module <shifter>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\mux_32b_2_1.v" into library work
+Parsing module <mux_32b_2_1>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\Diff.v" into library work
+Parsing module <Diff>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\register_file.v" into library work
+Parsing module <register_file>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\program_counter.v" into library work
+Parsing module <program_counter>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\PC_increment.v" into library work
+Parsing module <PC_increment>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\mux_5b_3_1.v" into library work
+Parsing module <mux_5b_3_1>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\mux_32b_3_1.v" into library work
+Parsing module <mux_32b_3_1>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\instruction_decode.v" into library work
+Parsing module <instruction_decode>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\immediate_sign_extend.v" into library work
+Parsing module <immediate_sign_extend>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\dff.v" into library work
+Parsing module <dff>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\branch_unit.v" into library work
+Parsing module <branch_unit>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\BranchControl.v" into library work
+Parsing module <BranchControl>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\datapath.v" into library work
+Parsing module <datapath>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\control_unit.v" into library work
+Parsing module <control_unit>.
+Analyzing Verilog file "C:\Users\akabh\assgn_6_Grp60\KGPRISC.v" into library work
+Parsing module <KGPRISC>.
+Parsing VHDL file "C:\Users\akabh\assgn_6_Grp60\ipcore_dir\bram_instr_mem.vhd" into library work
+Parsing entity <bram_instr_mem>.
+Parsing architecture <bram_instr_mem_a> of entity <bram_instr_mem>.
+Parsing VHDL file "C:\Users\akabh\assgn_6_Grp60\ipcore_dir\bram_data_mem.vhd" into library work
+Parsing entity <bram_data_mem>.
+Parsing architecture <bram_data_mem_a> of entity <bram_data_mem>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <KGPRISC>.
+
+Elaborating module <control_unit>.
+
+Elaborating module <datapath>.
+
+Elaborating module <dff>.
+
+Elaborating module <mux_5b_3_1>.
+
+Elaborating module <mux_32b_2_1>.
+
+Elaborating module <mux_32b_3_1>.
+
+Elaborating module <program_counter>.
+
+Elaborating module <PC_increment>.
+Going to vhdl side to elaborate module bram_instr_mem
+
+Elaborating entity <bram_instr_mem> (architecture <bram_instr_mem_a>) from library <work>.
+Back to verilog to continue elaboration
+
+Elaborating module <instruction_decode>.
+WARNING:HDLCompiler:1127 - "C:\Users\akabh\assgn_6_Grp60\datapath.v" Line 107: Assignment to shamt ignored, since the identifier is never used
+
+Elaborating module <register_file>.
+
+Elaborating module <immediate_sign_extend>.
+
+Elaborating module <ALU>.
+
+Elaborating module <adder_32_bit>.
+
+Elaborating module <cla_16_bit>.
+
+Elaborating module <cla_4_bit>.
+
+Elaborating module <lookahead_carry_unit>.
+
+Elaborating module <shifter>.
+
+Elaborating module <Diff>.
+
+Elaborating module <Decoder>.
+Going to vhdl side to elaborate module bram_data_mem
+
+Elaborating entity <bram_data_mem> (architecture <bram_data_mem_a>) from library <work>.
+Back to verilog to continue elaboration
+
+Elaborating module <BranchControl>.
+
+Elaborating module <branch_unit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <KGPRISC>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\KGPRISC.v".
+    Summary:
+	no macro.
+Unit <KGPRISC> synthesized.
+
+Synthesizing Unit <control_unit>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\control_unit.v".
+    Summary:
+	inferred  15 Multiplexer(s).
+Unit <control_unit> synthesized.
+
+Synthesizing Unit <datapath>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\datapath.v".
+        ra = 5'b11111
+INFO:Xst:3210 - "C:\Users\akabh\assgn_6_Grp60\datapath.v" line 99: Output port <shamt> of the instance <INSTRUCTION_DECODER> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <datapath> synthesized.
+
+Synthesizing Unit <dff>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\dff.v".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff> synthesized.
+
+Synthesizing Unit <mux_5b_3_1>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\mux_5b_3_1.v".
+    Found 5-bit 3-to-1 multiplexer for signal <out> created at line 31.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_5b_3_1> synthesized.
+
+Synthesizing Unit <mux_32b_2_1>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\mux_32b_2_1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_32b_2_1> synthesized.
+
+Synthesizing Unit <mux_32b_3_1>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\mux_32b_3_1.v".
+    Found 32-bit 3-to-1 multiplexer for signal <out> created at line 31.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_32b_3_1> synthesized.
+
+Synthesizing Unit <program_counter>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\program_counter.v".
+    Found 32-bit register for signal <instrAddr>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <program_counter> synthesized.
+
+Synthesizing Unit <PC_increment>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\PC_increment.v".
+    Found 32-bit adder for signal <nextPC> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_increment> synthesized.
+
+Synthesizing Unit <instruction_decode>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\instruction_decode.v".
+    Summary:
+	no macro.
+Unit <instruction_decode> synthesized.
+
+Synthesizing Unit <register_file>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\register_file.v".
+    Found 1024-bit register for signal <n0043[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <readData1> created at line 78.
+    Found 32-bit 32-to-1 multiplexer for signal <readData2> created at line 79.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  34 Multiplexer(s).
+Unit <register_file> synthesized.
+
+Synthesizing Unit <immediate_sign_extend>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\immediate_sign_extend.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <immediate_sign_extend> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\ALU.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <carry>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Latch(s).
+	inferred   6 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <adder_32_bit>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\adder_32_bit.v".
+INFO:Xst:3210 - "C:\Users\akabh\assgn_6_Grp60\adder_32_bit.v" line 31: Output port <p> of the instance <cla0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\akabh\assgn_6_Grp60\adder_32_bit.v" line 31: Output port <g> of the instance <cla0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\akabh\assgn_6_Grp60\adder_32_bit.v" line 32: Output port <p> of the instance <cla1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\akabh\assgn_6_Grp60\adder_32_bit.v" line 32: Output port <g> of the instance <cla1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <adder_32_bit> synthesized.
+
+Synthesizing Unit <cla_16_bit>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\cla_16_bit.v".
+    Summary:
+	no macro.
+Unit <cla_16_bit> synthesized.
+
+Synthesizing Unit <cla_4_bit>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\cla_4_bit.v".
+    Summary:
+Unit <cla_4_bit> synthesized.
+
+Synthesizing Unit <lookahead_carry_unit>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\lookahead_carry_unit.v".
+    Summary:
+	no macro.
+Unit <lookahead_carry_unit> synthesized.
+
+Synthesizing Unit <shifter>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\shifter.v".
+    Found 32-bit shifter arithmetic right for signal <in[31]_shamt[31]_shift_right_0_OUT> created at line 34
+    Found 32-bit shifter logical right for signal <in[31]_shamt[31]_shift_right_2_OUT> created at line 40
+    Found 32-bit shifter logical left for signal <in[31]_shamt[31]_shift_left_3_OUT> created at line 42
+    Summary:
+	inferred   6 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <shifter> synthesized.
+
+Synthesizing Unit <Diff>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\Diff.v".
+INFO:Xst:3210 - "C:\Users\akabh\assgn_6_Grp60\Diff.v" line 29: Output port <c_out> of the instance <NOT> is unconnected or connected to loadless signal.
+    Summary:
+Unit <Diff> synthesized.
+
+Synthesizing Unit <Decoder>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\Decoder.v".
+    Summary:
+	no macro.
+Unit <Decoder> synthesized.
+
+Synthesizing Unit <BranchControl>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\BranchControl.v".
+    Summary:
+	no macro.
+Unit <BranchControl> synthesized.
+
+Synthesizing Unit <branch_unit>.
+    Related source file is "C:\Users\akabh\assgn_6_Grp60\branch_unit.v".
+    Summary:
+	no macro.
+Unit <branch_unit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 1024-bit register                                     : 1
+ 32-bit register                                       : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 70
+ 2-bit 2-to-1 multiplexer                              : 7
+ 32-bit 2-to-1 multiplexer                             : 51
+ 32-bit 3-to-1 multiplexer                             : 1
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 8
+ 5-bit 3-to-1 multiplexer                              : 1
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 34
+ 32-bit xor2                                           : 2
+ 4-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/bram_instr_mem.ngc>.
+Reading core <ipcore_dir/bram_data_mem.ngc>.
+Loading core <bram_instr_mem> for timing and area information for instance <INSTRUCTION_MEMORY>.
+Loading core <bram_data_mem> for timing and area information for instance <DATA_MEMORY>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 1057
+ Flip-Flops                                            : 1057
+# Multiplexers                                         : 70
+ 2-bit 2-to-1 multiplexer                              : 7
+ 32-bit 2-to-1 multiplexer                             : 51
+ 32-bit 3-to-1 multiplexer                             : 1
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 8
+ 5-bit 3-to-1 multiplexer                              : 1
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 34
+ 32-bit xor2                                           : 2
+ 4-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <program_counter> ...
+
+Optimizing unit <KGPRISC> ...
+
+Optimizing unit <datapath> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <shifter> ...
+
+Optimizing unit <Diff> ...
+
+Optimizing unit <register_file> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block KGPRISC, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1057
+ Flip-Flops                                            : 1057
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : KGPRISC.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2821
+#      GND                         : 3
+#      INV                         : 2
+#      LUT1                        : 28
+#      LUT2                        : 12
+#      LUT3                        : 1067
+#      LUT4                        : 40
+#      LUT5                        : 289
+#      LUT6                        : 1228
+#      MUXCY                       : 29
+#      MUXF7                       : 90
+#      VCC                         : 3
+#      XORCY                       : 30
+# FlipFlops/Latches                : 1058
+#      FDC                         : 3
+#      FDCE                        : 1024
+#      FDP                         : 30
+#      LDE_1                       : 1
+# RAMS                             : 2
+#      RAMB36E1                    : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1058  out of  126800     0%  
+ Number of Slice LUTs:                 2666  out of  63400     4%  
+    Number used as Logic:              2666  out of  63400     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2667
+   Number with an unused Flip Flop:    1609  out of   2667    60%  
+   Number with an unused LUT:             1  out of   2667     0%  
+   Number of fully used LUT-FF pairs:  1057  out of   2667    39%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    210     1%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    135     1%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------+---------------------------+-------+
+Clock Signal                                                                          | Clock buffer(FF name)     | Load  |
+--------------------------------------------------------------------------------------+---------------------------+-------+
+clk                                                                                   | BUFGP                     | 1059  |
+DP/ALU_UNIT/ALUop[4]_GND_17_o_equal_4_o(DP/ALU_UNIT/ALUop[4]_GND_17_o_equal_4_o<4>1:O)| NONE(*)(DP/ALU_UNIT/carry)| 1     |
+--------------------------------------------------------------------------------------+---------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                           | Buffer(FF name)                                                                                                                                            | Load  |
+---------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+DP/DATA_MEMORY/N1(DP/DATA_MEMORY/XST_GND:G)              | NONE(DP/DATA_MEMORY/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)       | 2     |
+DP/INSTRUCTION_MEMORY/N1(DP/INSTRUCTION_MEMORY/XST_GND:G)| NONE(DP/INSTRUCTION_MEMORY/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 2     |
+---------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 14.012ns (Maximum Frequency: 71.369MHz)
+   Minimum input arrival time before clock: 1.173ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.012ns (frequency: 71.369MHz)
+  Total number of paths / destination ports: 2281908307 / 1088
+-------------------------------------------------------------------------
+Delay:               14.012ns (Levels of Logic = 17)
+  Source:            DP/REGISTER_FILE/registerBank_0_845 (FF)
+  Destination:       DP/PC/instrAddr_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DP/REGISTER_FILE/registerBank_0_845 to DP/PC/instrAddr_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.478   0.790  DP/REGISTER_FILE/registerBank_0_845 (DP/REGISTER_FILE/registerBank_0_845)
+     LUT6:I2->O            1   0.124   0.776  DP/REGISTER_FILE/Mmux_readData2_813 (DP/REGISTER_FILE/Mmux_readData2_813)
+     LUT6:I2->O            1   0.124   0.000  DP/REGISTER_FILE/Mmux_readData2_34 (DP/REGISTER_FILE/Mmux_readData2_34)
+     MUXF7:I1->O           3   0.368   0.435  DP/REGISTER_FILE/Mmux_readData2_2_f7_3 (DP/readData2<13>)
+     LUT5:I4->O           12   0.124   1.011  DP/ALU_UNIT/MUX_2/Mmux_out51 (DP/ALU_UNIT/mux_2Out<13>)
+     LUT6:I0->O            1   0.124   0.776  DP/ALU_UNIT/DIFF/NOT/cla0/lcu/c_out1_SW1 (N492)
+     LUT6:I2->O           31   0.124   0.573  DP/ALU_UNIT/DIFF/NOT/cla0/lcu/c_out3 (DP/ALU_UNIT/DIFF/NOT/c)
+     LUT6:I5->O            1   0.124   0.776  DP/ALU_UNIT/DIFF/D/in[31]_GND_26_o_equal_31_o<31>2_SW1 (N96)
+     LUT6:I2->O           25   0.124   0.572  DP/ALU_UNIT/DIFF/D/in[31]_GND_26_o_equal_31_o<31>2 (DP/ALU_UNIT/DIFF/D/in[31]_GND_26_o_equal_31_o<31>2)
+     LUT6:I5->O            2   0.124   0.782  DP/ALU_UNIT/DIFF/D/in[31]_GND_26_o_equal_18_o<31> (DP/ALU_UNIT/DIFF/D/in[31]_GND_26_o_equal_18_o)
+     LUT6:I2->O            3   0.124   0.953  DP/ALU_UNIT/DIFF/D/out<31>12_SW0 (N208)
+     LUT6:I0->O           31   0.124   0.573  DP/ALU_UNIT/DIFF/D/out5 (DP/ALU_UNIT/DIFF/D/n0032)
+     LUT6:I5->O            2   0.124   0.945  DP/ALU_UNIT/Mmux_result329 (DP/result<23>)
+     LUT6:I0->O            1   0.124   0.421  DP/ALU_UNIT/zero1 (DP/ALU_UNIT/zero)
+     LUT6:I5->O            2   0.124   0.427  DP/ALU_UNIT/zero3 (DP/ALU_UNIT/zero2)
+     LUT6:I5->O           17   0.124   0.822  DP/BRANCH_UNIT/isJump2 (DP/BRANCH_UNIT/isJump2)
+     LUT4:I1->O           16   0.124   0.519  DP/BRANCH_UNIT/isJump4 (DP/BRANCH_UNIT/isJump)
+     LUT5:I4->O            1   0.124   0.000  DP/BRANCH_UNIT/MUX_3/Mmux_out110 (DP/nextInstrAddr<0>)
+     FDC:D                     0.030          DP/PC/instrAddr_0
+    ----------------------------------------
+    Total                     14.012ns (2.860ns logic, 11.152ns route)
+                                       (20.4% logic, 79.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1057 / 1057
+-------------------------------------------------------------------------
+Offset:              1.173ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       DP/DFF/q (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to DP/DFF/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1057   0.001   0.678  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.494          DP/DFF/q
+    ----------------------------------------
+    Total                      1.173ns (0.495ns logic, 0.678ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock DP/ALU_UNIT/ALUop[4]_GND_17_o_equal_4_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.337|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------------------------------+---------+---------+---------+---------+
+                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------+---------+---------+---------+---------+
+DP/ALU_UNIT/ALUop[4]_GND_17_o_equal_4_o|    1.060|         |         |         |
+clk                                    |   14.012|         |    3.823|         |
+---------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 29.46 secs
+ 
+--> 
+
+Total memory usage is 4707692 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

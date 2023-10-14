@@ -1,0 +1,29 @@
+Command line:
+   KGPRISC_Tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64803
+
+Wed Nov 09 14:26:25 2022
+
+
+ Elaboration Time: 0.1875 sec
+
+ Current Memory Usage: 5213.81 Meg
+
+ Total Signals          : 839
+ Total Nets             : 68583
+ Total Signal Drivers   : 379
+ Total Blocks           : 80
+ Total Primitive Blocks : 54
+ Total Processes        : 345
+ Total Traceable Variables  : 487
+ Total Scalar Nets and Variables : 72026
+Total Line Count : 1403
+
+ Total Simulation Time: 0.46875 sec
+
+ Current Memory Usage: 4741.95 Meg
+
+Wed Nov 09 14:29:38 2022
+

@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/Users/akabh/assgn_6_Grp60/KGPRISC.xst" -ofn "C:/Users/akabh/assgn_6_Grp60/KGPRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 KGPRISC.ngc KGPRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPRISC_map.ncd KGPRISC.ngd KGPRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPRISC_map.ncd KGPRISC.ncd KGPRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPRISC.twx KGPRISC.ncd -o KGPRISC.twr KGPRISC.pcf 
+xst -intstyle ise -ifn "C:/Users/akabh/assgn_6_Grp60/KGPRISC.xst" -ofn "C:/Users/akabh/assgn_6_Grp60/KGPRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 KGPRISC.ngc KGPRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPRISC_map.ncd KGPRISC.ngd KGPRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPRISC_map.ncd KGPRISC.ncd KGPRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPRISC.twx KGPRISC.ncd -o KGPRISC.twr KGPRISC.pcf 
+bitgen -intstyle ise -f KGPRISC.ut KGPRISC.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 KGPRISC.ngc KGPRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPRISC_map.ncd KGPRISC.ngd KGPRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPRISC_map.ncd KGPRISC.ncd KGPRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPRISC.twx KGPRISC.ncd -o KGPRISC.twr KGPRISC.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f KGPRISC.ut KGPRISC.ncd 

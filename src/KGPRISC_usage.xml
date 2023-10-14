@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="5">
+<DesignStatistics TimeStamp="Wed Nov 09 14:48:57 2022"><group name="NetStatistics">
+<item name="NumNets_Active" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NumNets_Gnd" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_BOUNCEIN" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_HVCCGNDOUT" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_IOBIN2OUT" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_IOBOUTPUT" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_PADINPUT" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_PINFEED" rev="5">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="IOB33-IOB33M" rev="5">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="AGG_IO" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="AGG_LOCED_IO" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BONDED_IOB33" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LOCED_IOB33" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="Xilinx Core blk_mem_gen_v7_3, Xilinx CORE Generator 14.7" rev="4">
+<attrib name="value" value="2"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Wed Nov 09 14:48:57 2022"><group name="SiteSummary">
+<item name="IOB33" rev="5">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IOB33_OUTBUF" rev="5">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="PAD" rev="5">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+</group>
+</DeviceUsage>
+<ReportPinData TimeStamp="Wed Nov 09 14:48:57 2022"><group name="IOB33_OUTBUF">
+<item name="IN" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="5">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="3">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="PAD">
+<item name="PAD" rev="5">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB33">
+<item name="O" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="PAD" rev="5">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB">
+<item name="O" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="PAD" rev="3">
+<attrib name="value" value="1"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

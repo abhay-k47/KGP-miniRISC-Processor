@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/akabh/assgn_6_Grp60/shifter_Tb_isim_beh.exe" -prj "C:/Users/akabh/assgn_6_Grp60/shifter_Tb_beh.prj" "work.shifter_Tb" "work.glbl" 
